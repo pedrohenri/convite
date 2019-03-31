@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0; user-scalable=1;">
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>CONVITE</title>
+        <style>
+        
+        body{
+            background:#000;
+            color: #fff;
+            font-family: VT323;
+            text-align: center;
+            padding-top:40px;
+        }
+
+        .destaque{
+            color:#0c0;
+        }
+
+        .titulo{
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #000;
+
+            border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    background: blue;
+        }
+
+        .escolha{
+            border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    background: blue;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+        }
+        .escolha p{
+            margin-top: 0;
+        }
+        .escolha a{
+            padding: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+        }
+
+        .slide{
+            display: none;
+        }
+
+        .slide-loading img{
+            width:90%;
+        }
+
+        .slide-5{
+            /*display: block;*/
+        }
+
+        .slide-2{
+            background: url(letter.jpg) no-repeat top left;
+    padding: 10px;
+    color: #000;
+    text-shadow: 1px 1px RGBA(255,255,255,.7);
+    background-color: white;
+}
+
+    .slide-2 .destaque{
+        color: #000;
+        text-transform: uppercase;
+    }
+
+
+    .slide-3 img, .slide-4 img, .slide-5 img{
+        width: 80%;
+    border: 3px solid #0f0;
+    }
+
+    .slide-10 img{
+        width:100%;
+    }
+
+
+        
+        </style>
+    </head>
+
+    <body>
+
+        <div class="slide slide-loading">
+            <img src="loading.gif" alt="">
+        </div>
+
+        <div class="slide slide-1">
+            <img src="env.gif">
+            <p>Você ganhou um <span class="destaque">convite!</span></p>
+            <div class="escolha">
+                <p>Abrir?</p>
+                <a href="#" slide="slide-2" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-2" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-2">
+            <p><span class="destaque">Você foi convidado para uma missão especial</span></p>
+            <p>Nobre herói,<br>Sabemos que muitos são os deveres daqueles que vivem a guerrear contra a maldade e injustiça no mundo. Porém, um evento de grande importância se aproxima, e precisamos de sua ajuda!</p>
+            <p>Um de seus valorosos companheiros tomará como esposa uma linda princesa. Após mais de 4 anos de batalhas, já era hora não é mesmo?</p>
+            <p>A fim de garantir a proteção do casal convocamos você para servir como padrinho em seu casamento.</p>
+            <div class="escolha">
+                <p>Você aceita o convite?</p>
+                <a href="#" slide="slide-3" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-3" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <p class="titulo">How to Play</p>
+
+            <img src="terno.png" alt="">
+            <p><span class="destaque">Armadura</span></p>
+            <p>Sugerimos que escolha o disfarce de <span class="destaque">Terno azul marinho</span>. Bonus do poder para quem usar <span class="destaque">camisa branca</span>.</p>
+            <br><br>
+            <img src="sapato.jpg" alt="">
+            <p><span class="destaque">Acessórios</span></p>
+            <p>O combo da <span class="destaque">gravata borboleta rosa</span> com o <span class="destaque">sapato marrom</span> garantirá +3 pontos de velocidade.</p>
+            <div class="escolha">
+                <p>Entendeu as regras?</p>
+                <a href="#" slide="slide-4" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-4" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-4">
+            <p class="titulo">Selecione a fase</p>
+            <img src="sitio.jpg" alt="">
+            <p class="destaque">Sítio Capitão do Mato</p>
+            <p>Estr. do Mato Alto, 5265 - Guaratiba, Rio de Janeiro - RJ</p>
+            <div class="escolha">
+                <p>Confirma a fase?</p>
+                <a href="#" slide="slide-5" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-5" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-5">
+            <p class="titulo">Regras do jogo</p>
+
+            <p><span class="destaque">Tempo limite de chegada: 16:30</span></p>
+            <p><span style="color:#f00;">Morte súbita para quem se atrasar</span></p>
+
+            <div class="escolha">
+                <p>Confirmar o desafio?</p>
+                <a href="#" slide="slide-6" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-6" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-6">
+            <p class="titulo">!!!</p>
+            <p>Espere...parece que há alguém na sua oficina...</p>
+            <div class="escolha">
+                <p>Espiar?</p>
+                <a href="#" slide="slide-7" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-7" class="escolhaSim">> Sim</a>
+            </div>
+        </div>
+
+        <div class="slide slide-7">
+            <img src="nick.png" alt="">
+            <p><span class="destaque">Homem de tapa olho: </span> Você acha mesmo que é o único convocado para essa missão no mundo?</p>
+            <div class="escolha">
+                <p>Responda:</p>
+                <a href="#" slide="slide-8" class="escolhaNao">> Sim</a>
+                <a href="#" slide="slide-8" class="escolhaSim">> Não</a>
+            </div>
+        </div>
+
+        <div class="slide slide-8">
+                <img src="nick.png" alt="">
+            <p><span class="destaque">Homem de tapa olho: </span>Você faz parte de um universo maior, só não sabe disso ainda. 
+                </p>
+            <div class="escolha">
+                <p>Resposta:</p>
+                <a href="#" slide="slide-9" class="escolhaNao">> Quem é você?</a>
+            </div>
+        </div>
+
+        <div class="slide slide-9">
+                <img src="nick.png" alt="">
+            <p><span class="destaque">Nick Fury: </span>Nick Fury, diretor de casamentos. Eu estou aqui para falar sobre o projeto Casadores...</p>
+        </div>
+
+        <div class="slide slide-10">
+            <img src="herois.jpg" alt="">
+        </div>
+
+        <div class="slide slide-11">
+            <p><span class="destaque">Continua no dia 08/09/2019</span></p>
+        </div>
+
+        <iframe src="1.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe>
+
+
+    </body>
+    <script>
+    
+    $( document ).ready(function() {
+        $(".slide-loading").fadeIn(300);
+        setTimeout(function(){ $(".slide-loading").fadeOut(100); $(".slide-1").fadeIn(300); }, 5500);
+
+        $(".escolha a").on("click", function(e){
+            nextSlide = $(this).attr("slide");
+            console.log( nextSlide );
+
+            if (nextSlide == "slide-9"){
+                $(".slide").fadeOut(100);
+
+                $(".slide-9").fadeIn(300);
+
+                setTimeout(function(){ $(".slide-9").fadeOut(100); $(".slide-10").fadeIn(150).fadeOut(150).fadeIn(250).fadeOut(200).fadeIn(200).fadeOut(300); }, 11000);
+
+                setTimeout(function(){ $(".slide-11").fadeIn(300); }, 15000);
+                
+            }else{
+                $(".slide").fadeOut(100);
+                $("."+nextSlide).fadeIn(300);
+            }
+
+            
+
+            if (nextSlide == "slide-6"){
+                $("#iframeAudio").remove();
+            }
+
+            if (nextSlide == "slide-7"){
+                var audioElement = document.createElement('audio');
+                audioElement.setAttribute('src', '2.mp3');
+                audioElement.play();
+            }
+
+
+            
+            e.preventDefault();
+        });
+
+
+
+
+        
+
+
+
+    });
+    
+    </script>
+</html>
